@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bandr\\Documents\\C#AcademyCollection\\C#Academy\\MathGame\\MathGame\\MathGame.csproj",
+      "projectUniqueName": "C:\\Users\\bandr\\Source\\Repos\\MathGame\\MathGame\\MathGame.csproj",
       "projectName": "MathGame",
-      "projectPath": "C:\\Users\\bandr\\Documents\\C#AcademyCollection\\C#Academy\\MathGame\\MathGame\\MathGame.csproj",
+      "projectPath": "C:\\Users\\bandr\\Source\\Repos\\MathGame\\MathGame\\MathGame.csproj",
       "packagesPath": "C:\\Users\\bandr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bandr\\Documents\\C#AcademyCollection\\C#Academy\\MathGame\\MathGame\\obj\\",
+      "outputPath": "C:\\Users\\bandr\\Source\\Repos\\MathGame\\MathGame\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\bandr\\AppData\\Roaming\\NuGet\\NuGet.Config",

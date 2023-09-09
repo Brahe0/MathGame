@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jFbXZGMNPdIr5JKgmhHT+rCc6cTvSYTjHi2NWC+WUEyA/nKH5DLZudU4bnTCOmtHD6lJR4eWltUz5d0FmhW01A==",
+  "dgSpecHash": "rX1Dc157GiyUfkI6CCPQhy4RIv2ZxMd++piY07697niFQCN4vf9xwPu4q+9usRTBXuauF6P/wDHHmb5V8GVx5A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bandr\\Documents\\C#AcademyCollection\\C#Academy\\MathGame\\MathGame\\MathGame.csproj",
+  "projectFilePath": "C:\\Users\\bandr\\Source\\Repos\\MathGame\\MathGame\\MathGame.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
