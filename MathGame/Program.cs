@@ -1,8 +1,18 @@
-﻿Console.WriteLine("These are the most common data types:\n");
-Console.WriteLine("string" + " = André");
-Console.WriteLine("char = " + 'a');
-Console.WriteLine("int = " + 2);
-Console.WriteLine("decimal = " + 0.1m);
-Console.WriteLine("bool = " + true);
+﻿int index = 1;
 
-Console.WriteLine("me");
+int deux = 2;
+string name = "André";
+char initial = 'a';
+decimal high = 1.78m;
+bool isOn = true;
+
+string myParagraph = $@"These are the most common data types:
+{index++}- int = {name}
+{index++}- char = {initial}
+{index++}- int = {deux}
+{index++}- decimal = {high}
+{index++}- bool = {isOn}";
+
+Console.WriteLine(myParagraph);
+
+Console.ReadLine();
