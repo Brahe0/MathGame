@@ -1,18 +1,44 @@
-﻿int index = 1;
+﻿Console.WriteLine("Please type your name");
 
-int deux = 2;
-string name = "André";
-char initial = 'a';
-decimal high = 1.78m;
-bool isOn = true;
+var name = Console.ReadLine();
+var date = DateTime.Now;
 
-string myParagraph = $@"These are the most common data types:
-{index++}- int = {name}
-{index++}- char = {initial}
-{index++}- int = {deux}
-{index++}- decimal = {high}
-{index++}- bool = {isOn}";
+Console.WriteLine("----------------------------------------------------");
+Console.WriteLine($"Hello {name}. It's {date}. This is your Math Game.");
+Console.WriteLine(@$"What game would you like to play today? Choose from the options below:
+A- Addition
+S- Subtraction
+M- Multiplication 
+D- Division
+Q- Quit the game");
+Console.WriteLine("----------------------------------------------------");
 
-Console.WriteLine(myParagraph);
+var gameSelected = Console.ReadLine();
 
-Console.ReadLine();
+if (gameSelected != null)
+    if (gameSelected.Trim().ToLower() == "a")
+    {
+        Console.WriteLine("Addition game selected");
+    }
+    else if (gameSelected == "s")
+    {
+        Console.WriteLine("Subtraction game selected");
+    }
+    else if (gameSelected == "m")
+    {
+        Console.WriteLine("Multiplication game selected");
+    }
+    else if (gameSelected == "d")
+    {
+        Console.WriteLine("Division game selected");
+    }
+    else if (gameSelected == "q")
+    {
+        Console.WriteLine("Goodbye");
+    }
+    else
+    {
+        Console.WriteLine("Invalid Input");
+    }
+
+
