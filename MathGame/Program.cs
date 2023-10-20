@@ -3,43 +3,61 @@
 var name = Console.ReadLine();
 var date = DateTime.Now;
 
-Console.WriteLine("----------------------------------------------------");
-Console.WriteLine($"Hello {name}. It's {date}. This is your Math Game.");
-Console.WriteLine(@$"What game would you like to play today? Choose from the options below:
+Menu(name, date);
+
+void Menu(string? name, DateTime date)
+{
+    Console.WriteLine("----------------------------------------------------");
+    Console.WriteLine($"Hello {name}. It's {date}. This is your Math Game.");
+    Console.WriteLine(@$"What game would you like to play today? Choose from the options below:
 A- Addition
 S- Subtraction
 M- Multiplication 
 D- Division
 Q- Quit the game");
-Console.WriteLine("----------------------------------------------------");
+    Console.WriteLine("----------------------------------------------------");
 
-var gameSelected = Console.ReadLine();
+    var gameSelected = Console.ReadLine();
 
-if (gameSelected != null)
-    if (gameSelected.Trim().ToLower() == "a")
-    {
-        AdditionGame("Addition game selected");
-    }
-    else if (gameSelected == "s")
-    {
-        SubtractionGame("Subtraction game selected");
-    }
-    else if (gameSelected == "m")
-    {
-        MultiplicationGame("Multiplication game selected");
-    }
-    else if (gameSelected == "d")
-    {
-        DivisionGame("Division game selected");
-    }
-    else if (gameSelected == "q")
-    {
-        Console.WriteLine("Goodbye");
-    }
+    if (gameSelected != null)
+        switch (gameSelected.Trim().ToLower())
+        {
+            case "a":
+                {
+                    AdditionGame("Addition game selected");
+                    break;
+                }
+            case "s":
+                {
+                    SubtractionGame("Subtraction game selected");
+                    break;
+                }
+            case "m":
+                {
+                    MultiplicationGame("Multiplication game selected");
+                    break;
+                }
+            case "d":
+                {
+                    DivisionGame("Division game selected");
+                    break;
+                }
+            case "q":
+                {
+                    Console.WriteLine("Goodbye");
+                    break;
+                }
+            default:
+                {
+                    Console.WriteLine("Invalid Input");
+                    break;
+                }
+        }
     else
     {
         Console.WriteLine("Invalid Input");
     }
+}
 
 void AdditionGame(string message)
 {
@@ -57,3 +75,5 @@ void DivisionGame(string message)
 {
     Console.WriteLine(message);
 }
+
+
